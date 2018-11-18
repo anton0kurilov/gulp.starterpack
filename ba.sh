@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "======================"
-echo "  INITIALIZATION THE PROJECT..."
-echo "======================"
+echo "=============================="
+echo "  INITIALIZE THE PROJECT..."
+echo "=============================="
 npm init
 echo "======================"
 echo "  INSTALLING GULP..."
