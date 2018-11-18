@@ -22,7 +22,7 @@ gulp.task('sass', function (done) {
             cascade: true
         }))
         .pipe(cleancss({
-            compatibility: 'ie8'
+            compatibility: 'ie7'
         }))
         .pipe(gulp.dest('app/css'))
     done();
