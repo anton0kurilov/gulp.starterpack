@@ -3,7 +3,7 @@
 ## Downloads
 Download gulpfile.js: 
 ```
-curl https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/gulpfile.js
+curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/gulpfile.js
 ```
 
 ## Structure of project
