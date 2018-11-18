@@ -1,11 +1,11 @@
 # gulp.starterpack
 
 ## Downloads
-Download gulpfile.js: 
+gulpfile.js: 
 ```
 curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/gulpfile.js
 ```
-Download ba.sh:
+ba.sh:
 ```
 curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/ba.sh
 ```
