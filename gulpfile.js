@@ -51,25 +51,23 @@ gulp.task('watch', function (done) {
     done();
 });
 
-// BUILD 
-gulp.task('build', gulp.series('clean', 'sass', 'scripts', function (done) {
-    var buildcss = gulp.src(urlcss)
-        .pipe(gulp.dest('public_html/assets/css'));
-    console.log('CSS was built');
-    var buildjs = gulp.src(urljs)
-        .pipe(gulp.dest('public_html/assets/js'));
-    console.log('JS was built');
-    var buildhtml = gulp.src(urlhtml)
-        .pipe(gulp.dest('public_html'));
-    console.log('HTML was built');
-    var buildfonts = gulp.src(urlfonts)
-        .pipe(gulp.dest('public_html/assets/fonts'));
-    console.log('Fonts were built');
-    var buildfonts = gulp.src(urlimg)
-        .pipe(gulp.dest('public_html/assets/img'));
-    console.log('Images were built');
+// MOVE 
+gulp.task('move', function(done) {
+    gulp.src([
+        urlhtml,
+        urlcss,
+        urlimg,
+        urljs,
+        urlfonts
+    ], {
+        base: './'
+    })
+    .pipe(gulp.dest('public_html'));
     done();
-}));
+});
+
+// BUILD 
+gulp.task('build', gulp.series('clean', 'sass', 'scripts', 'move'));
 
 // DEPLOY
 gulp.task('deploy', function () {
