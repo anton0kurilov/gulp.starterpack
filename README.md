@@ -1,6 +1,6 @@
 # gulp.starterpack
 ## Requirements
-* npm
+* [npm](https://github.com/npm/cli)
 ## Downloads
 gulpfile.js: 
 ```
