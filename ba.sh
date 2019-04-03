@@ -6,7 +6,7 @@ npm init
 echo "======================"
 echo "  INSTALLING GULP..."
 echo "======================"
-npm install gulp@next --save-dev
+npm install gulp --save-dev
 echo "==============================="
 echo "  INSTALLING GULP PACKAGES..."
 echo "==============================="
