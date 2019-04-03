@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleancss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
     del = require('del'),
     uglify = require('gulp-uglifyjs'),
     gutil = require('gulp-util'),
@@ -33,6 +34,7 @@ gulp.task('scripts', function (done) {
     gulp.src([
             'app/js/**/*.js'
         ])
+        .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'));
     done();
