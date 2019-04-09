@@ -18,18 +18,22 @@ curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/
 ```
 /
 └── app/
-    ├── scss/
-    │   └── *.scss
-    ├── css/
-    │   └── *.css
-    ├── js/
-    |   └── *.js
+    ├── backend/
+    |   ├── *.*
+    ├── config/
+    |   └── ftpdata.json
     ├── fonts/
     |   ├── *.ttf
     |   └── *.eot
     ├── img/
     |   ├── *.png 
     |   └── *.jpg
-    ├── public_html/    // PRODUCTION FOLDER
-    └── *.html
+    ├── libs/
+    |   ├── *.*
+    ├── scss/
+    │   └── *.scss
+    ├── js/
+    |   └── *.js
+    ├── *.index.html
+    └── public_html/    // PRODUCTION DIRECTORY
 ```
