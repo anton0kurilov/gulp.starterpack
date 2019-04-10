@@ -17,23 +17,23 @@ curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/
 ## Structure of the project
 ```
 /
-└── app/
-    ├── backend/
-    |   ├── *.*
-    ├── config/
-    |   └── ftpdata.json
-    ├── fonts/
-    |   ├── *.ttf
-    |   └── *.eot
-    ├── img/
-    |   ├── *.png 
-    |   └── *.jpg
-    ├── libs/
-    |   ├── *.*
-    ├── scss/
-    │   └── *.scss
-    ├── js/
-    |   └── *.js
-    ├── *.index.html
-    └── public_html/    // PRODUCTION DIRECTORY
+├── app/
+|   ├── backend/
+|   |   ├── *.*
+|   ├── config/
+|   |   └── ftpdata.json
+|   ├── fonts/
+|   |   ├── *.ttf
+|   |   └── *.eot
+|   ├── img/
+|   |   ├── *.png 
+|   |   └── *.jpg
+|   ├── libs/
+|   |   ├── *.*
+|   ├── scss/
+|   │   └── *.scss
+|   ├── js/
+|   |   └── *.js
+|   ├── *.index.html
+└── public_html/    // PRODUCTION DIRECTORY
 ```
