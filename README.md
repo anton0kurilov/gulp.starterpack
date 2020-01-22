@@ -1,4 +1,5 @@
 # gulp.starterpack
+Quick start boilerplate for a Gulp environment
 ## Requirements
 * [npm](https://github.com/npm/cli)
 ## Downloads
