@@ -38,3 +38,7 @@ curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/
 |   ├── *.index.html
 └── public_html/    // PRODUCTION DIRECTORY
 ```
+## Basic commands
+```gulp``` — Starting Gulp Watch task
+```gulp build``` — Building the project
+```gulp deploy``` — Deploying your project to an FTP server
