@@ -44,8 +44,9 @@ gulp.task('scripts', function (done) {
         .pipe(gulp.dest('public_html/app/js'));
     // libs
     gulp.src([
-        'app/libs/jquery/dist/jquery.min.js'
-    ])
+            'app/libs/jquery/dist/jquery.min.js'
+            // url of another libs
+        ])
         .pipe(concat('libs.min.js'))
         .pipe(gulp.dest('public_html/app/js'));
     done();
@@ -61,8 +62,8 @@ gulp.task('clean', function (done) {
 gulp.task('move', function (done) {
     // backend and assets
     gulp.src(urlmove, {
-        base: './'
-    })
+            base: './'
+        })
         .pipe(gulp.dest('public_html'));
     // html
     gulp.src(urlhtml)
@@ -87,9 +88,9 @@ gulp.task('deploy', function () {
         'public_html/**'
     ];
     return gulp.src(globs, {
-        base: './',
-        buffer: false
-    })
+            base: './',
+            buffer: false
+        })
         .pipe(conn.newer('/'))
         .pipe(conn.dest('/'));
 });
