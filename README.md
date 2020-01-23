@@ -13,7 +13,7 @@ curl -O https://raw.githubusercontent.com/anton0kurilov/gulp.starterpack/master/
 ```
 ## Install
 1. Download all files
-2. Enter in the terminal ```./ba.sh```
+2. Enter ```./ba.sh``` in the terminal
 3. Enjoy!
 ## Structure of the project
 ```
